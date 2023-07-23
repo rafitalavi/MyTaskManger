@@ -21,7 +21,7 @@ def add():
     db.session.add(new_task)
     db.session.commit()
     return redirect(url_for("home")) 
-
+#rafit alavi
 @app.route("/update/<int:task_id>")
 def update(task_id):
     task =TaskManager.query.filter_by(id=task_id).first()
